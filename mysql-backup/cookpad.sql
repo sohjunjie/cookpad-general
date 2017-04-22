@@ -50,8 +50,9 @@ CREATE TABLE `user_friend` (
   `user_id` int(11) NOT NULL,
   `friend_id` int(11) NOT NULL,
   PRIMARY KEY (`user_id`,`friend_id`),
-  CONSTRAINT `fk_friend_id` FOREIGN KEY (`user_id`) REFERENCES `cookpad_user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_user_id` FOREIGN KEY (`user_id`) REFERENCES `cookpad_user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  KEY `fk_friend_cookpaduser_idx` (`friend_id`),
+  CONSTRAINT `fk_friend_cookpaduser` FOREIGN KEY (`friend_id`) REFERENCES `cookpad_user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_user_cookpaduser` FOREIGN KEY (`user_id`) REFERENCES `cookpad_user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -61,7 +62,7 @@ CREATE TABLE `user_friend` (
 
 LOCK TABLES `user_friend` WRITE;
 /*!40000 ALTER TABLE `user_friend` DISABLE KEYS */;
-INSERT INTO `user_friend` VALUES (1,2),(1,5),(2,1),(5,1);
+INSERT INTO `user_friend` VALUES (2,1),(5,1),(1,2),(1,5);
 /*!40000 ALTER TABLE `user_friend` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -74,4 +75,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-04-22 20:49:41
+-- Dump completed on 2017-04-22 22:11:46

@@ -5,7 +5,7 @@
 
 ## Overview of Q1 Restful API
 
-Refer to `\documentation\q1_restful_api_design.docx` for information about Q1
+Refer to `\documentation\q1\q1_restful_api_design.docx` for quick summary about about Q1
 
 - [Version Information](#version-information)
 - [Setup Database](#setup-database)
@@ -75,4 +75,5 @@ To try this app, simply import existing project from `https://github.com/sohjunj
 
 
 ## Overview of Q2 Database Design
-Refer to `\documentation\q2_database_design.docx` for solution to Q2
+Refer to `\documentation\q2\q2_database_design_menudb.sql` for solution to Q2
+Refer to `\documentation\q2\q2_database_design.docx` for details about Q2 solution
