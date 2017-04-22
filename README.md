@@ -75,4 +75,4 @@ To try this app, simply import existing project from `https://github.com/sohjunj
 
 
 ## Overview of Q2 Database Design
-Refer to `\documentation\q2_database_design.docx` for information about Q1
+Refer to `\documentation\q2_database_design.docx` for solution to Q2
