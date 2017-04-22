@@ -1,20 +1,44 @@
-# transporter
-CZ2006 Project - Accident Management System
+# Cookpad - Programming Assignment: General
+
 
 ## Overview
-Accident Management System by transporter is a web app that allows the public to report road accidents and traffic violations on the go. LTA personnels can login to the web app to approve reported accidents and view data analytics on accidents data.
+- [Version Information](#version-information)
+- [Results](#results)
 
-## Key users
-- Public
-- LTA Personnel
+### Version Information
+Spring MVC Web + Hibernate on Java
 
-## Key benefits
-- Public
+Java
 
-	By reporting accidents through `transporter`, the public can access graph and map visualisation of accidents reports which helps raise awareness and imbue caution when using the road. The public also gets data about unresolved accidents in real-time, allowing them to avoid those routes on-the-go.
+	jdk1.8.0_51
+	
+Spring framework
 
-- LTA Personnel
+	4.3.2
 
-	Through accessing accidents reports reported by user, LTA Personnel can perform analytics to determine reasons resulting in the accidents. Map visualisation of accidents can help LTA Personnel to better plan the building of roads so that accidents as a result of badly designed roads can be avoided.
+ORM Framework
+	
+	Hibernate 3
 
-	Installation of enforcement cameras are also expensive to implement in Singapore. Through `transporter`, LTA Personnel can make more informed decisions which are based on data science.
+Database
+
+	Mysql
+
+
+## Results
+
+```
+GET - /user/1
+```
+```
+Sample Response:
+HTTP STATUS: OK
+{
+	id: 1,
+	name: "Austin",
+	friends: [
+		2,
+		5
+	]
+}
+```
