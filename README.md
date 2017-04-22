@@ -5,8 +5,8 @@
 - [Version Information](#version-information)
 - [Results](#results)
 
-### Version Information
-Spring MVC Web + Hibernate on Java
+### Version Information 
+`Spring MVC Web + Hibernate on Java`
 
 Java
 
