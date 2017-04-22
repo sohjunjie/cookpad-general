@@ -1,7 +1,12 @@
 # Cookpad - Programming Assignment: General
 
+- [Overview of Q1 Restful API](#overview-of-q1-restful-api)
+- [Overview of Q2 Database Design](#overview-of-q2-database-design)
 
-## Overview
+## Overview of Q1 Restful API
+
+Refer to `\documentation\q1_restful_api_design.docx` for information about Q1
+
 - [Version Information](#version-information)
 - [Setup Database](#setup-database)
 - [Results](#results)
@@ -18,7 +23,7 @@ Spring framework
 
 	4.3.2
 
-ORM Framework
+Hibernate ORM Framework
 	
 	Hibernate 3
 
@@ -31,7 +36,7 @@ Server
 	Tomcat 9
 
 
-## Setup database
+### Setup Database
 - Install MySQL
 - Create a 'cookpad' database by importing from `\mysql-backup\cookpad.sql`
 - In `\src\main\webapp\WEB-INF\jdbc.properties`, setup your username, password, port as following
@@ -42,7 +47,7 @@ Server
 		jdbc.username={mysql-username}
 		jdbc.password={mysql-password}
 
-## Results
+### Results
 
 ```
 Request Endpoint
@@ -63,7 +68,11 @@ HTTP STATUS: OK
 }
 ```
 
-## Others
+### Others
 
 This restful web app was developed using eclipse ide - dynamic web project.
 To try this app, simply import existing project from `https://github.com/sohjunjie/cookpad-general.git`
+
+
+## Overview of Q2 Database Design
+Refer to `\documentation\q2_database_design.docx` for information about Q1
