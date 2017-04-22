@@ -63,4 +63,4 @@ HTTP STATUS: OK
 ## Others
 
 This restful web app was developed using eclipse ide - dynamic web project.
-To try this app, simply import existing project from [Git repository page](//github.com/sohjunjie/cookpad-general/)
+To try this app, simply import existing project from `https://github.com/sohjunjie/cookpad-general.git`
