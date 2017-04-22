@@ -45,9 +45,12 @@ Server
 ## Results
 
 ```
+Request Endpoint
+GET - /user/{userId}
+```
+```
 GET - /user/1
-```
-```
+
 Sample Response:
 HTTP STATUS: OK
 {
