@@ -75,5 +75,5 @@ To try this app, simply import existing project from `https://github.com/sohjunj
 
 
 ## Overview of Q2 Database Design
-Refer to `\documentation\q2\q2_database_design_menudb.sql` for solution to Q2
-Refer to `\documentation\q2\q2_database_design.docx` for details about Q2 solution
+- Refer to `\documentation\q2\q2_database_design_menudb.sql` for solution to Q2
+- Refer to `\documentation\q2\q2_database_design.docx` for details about Q2 solution
