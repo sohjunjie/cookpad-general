@@ -6,7 +6,6 @@ import java.util.Set;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -15,11 +14,6 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.JsonIdentityReference;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators;
-
-@JsonIdentityInfo(property = "userId", generator = ObjectIdGenerators.PropertyGenerator.class)
 @Entity
 @Table(name="cookpad_user")
 public class CookpadUser{
@@ -32,14 +26,12 @@ public class CookpadUser{
 	@Column
 	private String name;
 
-	@JsonIdentityReference(alwaysAsId=true)
 	@JoinTable(name = "user_friend",
 			joinColumns = {@JoinColumn(name="user_id", referencedColumnName = "id", nullable = false)},
 			inverseJoinColumns = {@JoinColumn(name="friend_id", referencedColumnName = "id", nullable = false)}
 	)
-	@ManyToMany(cascade=CascadeType.PERSIST, fetch=FetchType.EAGER)
+	@ManyToMany(cascade=CascadeType.PERSIST)
 	private Set<CookpadUser> friends = new HashSet<CookpadUser>();
-
 
 	public CookpadUser () {};
 	public CookpadUser(int id, String name) {
@@ -47,8 +39,6 @@ public class CookpadUser{
 		this.id = id;
 		this.name = name;
 	}
-
-
 
 	public int getId() {
 		return id;

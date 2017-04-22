@@ -6,11 +6,11 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.general.dao.AuthenticatedUserDao;
+import com.general.dao.CookpadUserDao;
 import com.general.model.user.CookpadUser;
 
 @Repository
-public class AuthenticatedUserDaoImpl implements AuthenticatedUserDao {
+public class CookpadUserDaoImpl implements CookpadUserDao {
 
 	@Autowired
 	private SessionFactory session;
@@ -27,13 +27,13 @@ public class AuthenticatedUserDaoImpl implements AuthenticatedUserDao {
 	}
 
 	@Override
-	public CookpadUser getAuthUser(int userId) {
+	public CookpadUser getCookpadUser(int userId) {
 		return (CookpadUser) session.getCurrentSession().get(CookpadUser.class, userId);
 	}
 
 	@SuppressWarnings("unchecked")
 	@Override
-	public List<CookpadUser> getAllAuthUser() {
+	public List<CookpadUser> getAllCookpadUser() {
 		return session.getCurrentSession().createQuery("from CookpadUser").list();
 	}
 
