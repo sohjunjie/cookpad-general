@@ -38,7 +38,7 @@ Server
 
 ### Setup Database
 - Install MySQL
-- Create a 'cookpad' database by importing from `\mysql-backup\cookpad.sql`
+- Create a `cookpad` database schema and import the tables into schema using `\mysql-backup\cookpad.sql`
 - In `\src\main\webapp\WEB-INF\jdbc.properties`, setup your username, password, port as following
 
 		jdbc.driverClassName=com.mysql.jdbc.Driver
