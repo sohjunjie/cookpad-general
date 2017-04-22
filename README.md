@@ -60,7 +60,7 @@ HTTP STATUS: OK
 }
 ```
 
-##Others
+## Others
 
 This restful web app was developed using eclipse ide - dynamic web project.
 To try this app, simply import existing project from [Git repository page](//github.com/sohjunjie/cookpad-general/)
